@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: JamesVLF/emerge
   branch: main
+  base_url: https://dev-up0qnod7apfujdgf.us.auth0.com
+  auth_endpoint: /authorize
 
 media_folder: "public/images"
 public_folder: "/images"
