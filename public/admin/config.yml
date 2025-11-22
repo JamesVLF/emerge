@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "research"
+    label: "Research Posts"
+    folder: "src/content/research"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Publish Date", name: "pubDate", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "feed"
+    label: "Feed Updates"
+    folder: "src/content/feed"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: false}
+      - {label: "Publish Date", name: "pubDate", widget: "datetime"}
+      - {label: "Type", name: "type", widget: "select", options: ["text", "image", "video", "audio", "link"]}
+      - {label: "Media URL", name: "media", widget: "string", required: false}
+      - {label: "Link URL", name: "link", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "musings"
+    label: "Musings"
+    folder: "src/content/musings"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Publish Date", name: "pubDate", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "select", options: ["writing", "music", "observation", "story"], required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}

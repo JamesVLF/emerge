@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About | James">
+  <div class="max-w-4xl mx-auto">
+    <div class="mb-16">
+      <h1 class="text-5xl md:text-6xl font-display font-semibold mb-6 bg-gradient-to-r from-neural-900 to-neural-700 bg-clip-text text-transparent">
+        About
+      </h1>
+    </div>
+
+    <!-- Bio Section -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-display font-semibold mb-6 text-neural-800">
+        Who I am
+      </h2>
+      <div class="prose prose-lg max-w-none font-body text-neural-700 leading-relaxed space-y-4">
+        <p>
+          I'm a PhD student in computational biology at UC Santa Cruz, working in the Sharf Lab. 
+          My research focuses on understanding how environmental neurotoxins affect dopaminergic neural 
+          networks using human midbrain organoids and multi-electrode array recordings.
+        </p>
+        <p>
+          I develop computational pipelines for burst detection, correlation analysis, and statistical 
+          modeling to study Parkinson's disease mechanisms. My work spans wet lab techniques, 
+          electrophysiology, and advanced data analysis.
+        </p>
+        <p>
+          Beyond the bench, I'm interested in the broader questions: how do we make sense of complex 
+          biological systems? What can neural networks teach us about computation, and vice versa? 
+          How do we bridge the gap between molecular mechanisms and emergent phenomena?
+        </p>
+      </div>
+    </section>
+
+    <!-- Research Focus -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-display font-semibold mb-6 text-neural-800">
+        Research focus
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gradient-to-br from-synapse-light/10 to-synapse/10 rounded-lg p-6 border border-synapse-light/30">
+          <h3 class="text-xl font-display font-semibold mb-3 text-synapse-dark">
+            Organoid Electrophysiology
+          </h3>
+          <p class="text-neural-700 font-body">
+            Developing methods for long-term multi-electrode array recordings of human midbrain organoids 
+            to study neural network dynamics.
+          </p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-dendrite-light/10 to-dendrite/10 rounded-lg p-6 border border-dendrite-light/30">
+          <h3 class="text-xl font-display font-semibold mb-3 text-dendrite-dark">
+            Computational Analysis
+          </h3>
+          <p class="text-neural-700 font-body">
+            Building adaptive burst detection algorithms and statistical models to quantify treatment 
+            effects while accounting for biological variability.
+          </p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-neural-200/30 to-neural-300/30 rounded-lg p-6 border border-neural-300">
+          <h3 class="text-xl font-display font-semibold mb-3 text-neural-800">
+            Parkinson's Disease
+          </h3>
+          <p class="text-neural-700 font-body">
+            Investigating how environmental neurotoxins like 6-OHDA fundamentally reorganize 
+            neural network coordination and dynamics.
+          </p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-synapse-dark/10 to-neural-800/10 rounded-lg p-6 border border-synapse-dark/30">
+          <h3 class="text-xl font-display font-semibold mb-3 text-synapse-dark">
+            Pipeline Development
+          </h3>
+          <p class="text-neural-700 font-body">
+            Containerizing analysis workflows for deployment on high-performance computing clusters 
+            to enable large-scale analysis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications & CV -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-display font-semibold mb-6 text-neural-800">
+        Academic profile
+      </h2>
+      <div class="bg-white/60 backdrop-blur-sm rounded-lg p-8 border border-neural-200">
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl font-display font-semibold mb-2 text-neural-800">Education</h3>
+            <p class="font-body text-neural-700">
+              <span class="font-semibold">PhD in Computational Biology</span><br/>
+              University of California, Santa Cruz<br/>
+              Sharf Lab (in progress)
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="text-xl font-display font-semibold mb-2 text-neural-800">Links</h3>
+            <div class="flex flex-wrap gap-4 font-body">
+              <a href="mailto:your.email@ucsc.edu" class="text-synapse hover:text-synapse-dark transition-colors">
+                Email
+              </a>
+              <a href="https://github.com/yourusername" class="text-dendrite hover:text-dendrite-dark transition-colors">
+                GitHub
+              </a>
+              <a href="https://scholar.google.com/yourid" class="text-neural-700 hover:text-neural-900 transition-colors">
+                Google Scholar
+              </a>
+              <a href="/cv.pdf" class="text-synapse-dark hover:text-synapse transition-colors">
+                Download CV (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2 class="text-3xl font-display font-semibold mb-6 text-neural-800">
+        Get in touch
+      </h2>
+      <p class="text-xl text-neural-600 font-body leading-relaxed mb-4">
+        Interested in collaboration, want to chat about research, or just curious about the work? 
+        Feel free to reach out.
+      </p>
+      <a href="mailto:your.email@ucsc.edu" class="inline-block bg-gradient-to-r from-synapse to-dendrite text-white font-body font-semibold px-8 py-3 rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
+        Send me an email
+      </a>
+    </section>
+  </div>
+</BaseLayout>

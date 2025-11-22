@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const researchPosts = (await getCollection('research')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<BaseLayout title="Research | James">
+  <div class="max-w-4xl mx-auto">
+    <div class="mb-16">
+      <h1 class="text-5xl md:text-6xl font-display font-semibold mb-6 bg-gradient-to-r from-neural-900 to-synapse-dark bg-clip-text text-transparent">
+        Research
+      </h1>
+      <p class="text-xl text-neural-600 font-body leading-relaxed">
+        Exploring how environmental neurotoxins reshape neural networks in human midbrain organoids. 
+        Computational approaches to understanding Parkinson's disease mechanisms.
+      </p>
+    </div>
+
+    <div class="space-y-12">
+      {researchPosts.map((post) => (
+        <article class="group">
+          <a href={`/research/${post.slug}`} class="block">
+            <div class="bg-white/60 backdrop-blur-sm rounded-lg p-8 border border-neural-200 hover:border-synapse-light transition-all duration-300 hover:shadow-lg">
+              <time class="text-sm font-mono text-neural-500 mb-2 block">
+                {post.data.pubDate.toLocaleDateString('en-US', { 
+                  year: 'numeric', 
+                  month: 'long', 
+                  day: 'numeric' 
+                })}
+              </time>
+              
+              <h2 class="text-2xl md:text-3xl font-display font-semibold mb-3 text-neural-800 group-hover:text-synapse transition-colors">
+                {post.data.title}
+              </h2>
+              
+              <p class="text-neural-600 font-body mb-4 leading-relaxed">
+                {post.data.description}
+              </p>
+              
+              {post.data.tags && (
+                <div class="flex flex-wrap gap-2 mt-4">
+                  {post.data.tags.map((tag) => (
+                    <span class="text-xs font-mono px-3 py-1 bg-neural-100 text-neural-600 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+              
+              <div class="mt-4 text-synapse-dark font-mono text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                Read more →
+              </div>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

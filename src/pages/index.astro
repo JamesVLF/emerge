@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="James | Computational Biology & Life">
+  <!-- Hero Section -->
+  <section class="max-w-4xl mx-auto mb-24">
+    <div class="relative">
+      <!-- Decorative element -->
+      <div class="absolute -left-4 top-0 w-1 h-32 bg-gradient-to-b from-synapse via-dendrite to-transparent opacity-60"></div>
+      
+      <h2 class="text-5xl md:text-6xl lg:text-7xl font-display font-semibold mb-6 leading-tight">
+        <span class="bg-gradient-to-r from-neural-900 to-neural-700 bg-clip-text text-transparent">
+          Mapping the</span><br/>
+        <span class="bg-gradient-to-r from-synapse-dark via-synapse to-dendrite bg-clip-text text-transparent italic">
+          architecture of thought
+        </span>
+      </h2>
+      
+      <div class="prose prose-lg max-w-none font-body text-neural-700 leading-relaxed">
+        <p class="text-xl mb-6 opacity-0 animate-[fadeIn_0.6s_ease-in_0.2s_forwards]">
+          PhD student in computational biology at UC Santa Cruz, working in the Sharf Lab on 
+          <span class="text-synapse-dark font-medium">Parkinson's disease</span> research. 
+          I study how environmental neurotoxins reshape neural networks using 
+          <span class="text-dendrite-dark font-medium">human midbrain organoids</span> and 
+          multi-electrode array recordings.
+        </p>
+        
+        <p class="text-lg text-neural-600 opacity-0 animate-[fadeIn_0.6s_ease-in_0.4s_forwards]">
+          Beyond the lab, this is where I explore the full spectrum of being human—the research 
+          that drives me, the art that moves me, the stories that shape me, and the observations 
+          that connect it all.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Highlights Grid -->
+  <section class="max-w-6xl mx-auto mb-24">
+    <h3 class="text-3xl font-display font-semibold mb-12 text-neural-800">
+      Recent <span class="text-synapse italic">highlights</span>
+    </h3>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Research Card -->
+      <a href="/research" class="group relative bg-white/60 backdrop-blur-sm rounded-lg p-8 border border-neural-200 hover:border-synapse-light transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+        <div class="absolute top-0 left-0 w-2 h-16 bg-gradient-to-b from-synapse to-synapse-dark rounded-tl-lg rounded-bl-lg"></div>
+        <h4 class="text-xl font-display font-semibold mb-3 text-neural-800 group-hover:text-synapse transition-colors">
+          Adaptive Burst Detection
+        </h4>
+        <p class="text-neural-600 font-body mb-4">
+          Developing RMS-based algorithms that adapt to individual organoid characteristics for neural activity analysis.
+        </p>
+        <span class="text-sm font-mono text-synapse-dark">Research →</span>
+      </a>
+      
+      <!-- Feed Card -->
+      <a href="/feed" class="group relative bg-white/60 backdrop-blur-sm rounded-lg p-8 border border-neural-200 hover:border-dendrite-light transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+        <div class="absolute top-0 left-0 w-2 h-16 bg-gradient-to-b from-dendrite to-dendrite-dark rounded-tl-lg rounded-bl-lg"></div>
+        <h4 class="text-xl font-display font-semibold mb-3 text-neural-800 group-hover:text-dendrite transition-colors">
+          Daily Explorations
+        </h4>
+        <p class="text-neural-600 font-body mb-4">
+          Quick thoughts, lab updates, interesting finds, and moments worth sharing from the journey.
+        </p>
+        <span class="text-sm font-mono text-dendrite-dark">Feed →</span>
+      </a>
+      
+      <!-- Musings Card -->
+      <a href="/musings" class="group relative bg-white/60 backdrop-blur-sm rounded-lg p-8 border border-neural-200 hover:border-synapse-dark transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+        <div class="absolute top-0 left-0 w-2 h-16 bg-gradient-to-b from-synapse-dark to-neural-800 rounded-tl-lg rounded-bl-lg"></div>
+        <h4 class="text-xl font-display font-semibold mb-3 text-neural-800 group-hover:text-synapse-dark transition-colors">
+          Writings & Reflections
+        </h4>
+        <p class="text-neural-600 font-body mb-4">
+          Music, stories, observations, and the threads that connect science to the rest of life.
+        </p>
+        <span class="text-sm font-mono text-neural-800">Musings →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Current Focus -->
+  <section class="max-w-4xl mx-auto">
+    <div class="bg-gradient-to-r from-dendrite-light/10 to-synapse-light/10 rounded-lg p-8 md:p-12 border border-dendrite-light/30">
+      <h3 class="text-2xl font-display font-semibold mb-4 text-neural-800">
+        Currently exploring
+      </h3>
+      <ul class="space-y-3 font-body text-neural-700">
+        <li class="flex items-start gap-3">
+          <span class="text-synapse mt-1">∿</span>
+          <span>How 6-OHDA fundamentally reorganizes neural network dynamics in midbrain organoids</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-dendrite mt-1">∿</span>
+          <span>Linear mixed effects models for quantifying treatment effects across organoid batches</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-synapse-dark mt-1">∿</span>
+          <span>The intersection of computational methods and wet lab protocols in organoid research</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</BaseLayout>
