@@ -22,8 +22,6 @@ intuition devoid of any logic whatsoever, by the way—to  to return to college
 brilliant plan was this: make a huge circle in my life path and return to where
 I was at the age of 18.
 
- 
-
 To
 sum up my experience from the age of 0-18: relatively high levels of emotional
 and psychological discomfort. When I left my family behind to pursue science at
@@ -38,8 +36,6 @@ that’s just part of my personality. But the pressure buildup of avoidance
 eventually reached a crescendo during my 4th year, and all of the
 foundationless goals I had been pursuing fell to the ground like dead leaves in
 autumn. 
-
- 
 
 I
 built myself in the years that followed. I didn’t read self-help books or
@@ -56,8 +52,6 @@ and love—had changed. However, I carried a lingering sense of shame and regret
 for “throwing away” my academic opportunities; and I often wondered whether I
 had failed to honor my potential in life. 
 
- 
-
 Only
 near the end of my junior year at UCSC did I begin to fully understand why I chose
 to return to college. I found myself in near-identical circumstances, with the
@@ -70,13 +64,10 @@ insecurities arose just as before, but I didn’t feel compelled to act on them
 or conclude anything about myself from them. I was too fascinated with the beauty of this diamond and couldn't get over how grateful I was. "Excuse me, but are you sure you delivered to the right address? Really, this life is for little, unremarkable me?" Learning science was, at times like listening to a transcendent musical
 composition or fully experiencing, with all 27 trillion cells at once enamored by an ineffably beautiful painting or poem. "Was it possible to die from astonishment!?," I sometimes feared and giggled about. And you don't have to pay money for this--it's totally free! And there's ALWAYS more....
 
-
- 
-
 As a graduate student, I discovered
-another aspect of grateful curiosity--durable fulfillment. I find science very difficult to learn. Most of the time, I'm in a state of frustration and confusion. I've grown comfortable with feeling like the dumbest person in the room. I'm telling you--it is great to not have that pressure of being correct all of the time! It's fun to make educated guesses and get playfully challenged. At first, it's scary to make a statement when you don't know, but then it becomes exhilarating! It's thrilling to push into the unknown! And to experience that thrill, one has to be perpetually stupid and confused. That's where the fun happens--the play, the creativity. The frustration of losing over and over--just for that chance of reporting something original! That's what got me hooked on research, and willing to ante up all of my waking energy on that possibility. I believe that, in terms of career, that's the ultimate fulfillment as a scientist--win or lose (A draw indicates a half-hearted decision, and I've developed a strong distaste for those). 
+another aspect of grateful curiosity--durable fulfillment. I find science very difficult to learn. Most of the time, I'm in a state of frustration and confusion. I've grown comfortable with feeling like the dumbest person in the room. I'm telling you--it is great to not have that pressure of being correct all of the time! It's fun to make educated guesses and get playfully challenged. At first, it's scary to make a statement when you don't know, but then it becomes exhilarating! It's thrilling to push into the unknown! And to experience that thrill, one has to be perpetually stupid and confused. That's where the fun happens--the play, the creativity. Don't believe me? Just try it and see for yourself! The frustration of losing over and over--just for that chance of reporting something original! That's what got me hooked on research. There's a compulsion to ante up all of my waking energy on that possibility. I believe that, in terms my scientific career, a contribution that's authentic and original is the ultimate fulfillment, win or lose (A draw indicates a half-hearted decision, and I've developed a strong distaste for those). 
 
-As an individual human, the fulfillment is in the path itself. To me, fulfillment is an outcome of transformative growth--a process of aligning with, discovering, and expressing more and more of who we truly are. That's all. Just that. The feedback comes from only from the quality of our relationships with one another, and what we leave behind us in those interactions, no matter how fleeting or enduring. Every single interaction we have matters profoundly--and nothing is more powerful than even the smallest gesture of care or kindness offered to another. Just a fleeting look into the eyes can communicate everything between the truest parts of ourselves--all at once, everything.
+As an individual human, the fulfillment is in the path itself. To me, fulfillment is an outcome of transformative growth--a process of aligning with, discovering, and expressing more and more of who we truly are. That's all. Just that. The feedback comes from our relationships, what we leave behind us, and the ratio of chaos/drama versus harmony/simplicity currently in our experience. Every single interaction we have matters profoundly--and nothing is more powerful than even the smallest gesture of care or kindness offered to another. Just a fleeting look into the eyes can communicate everything between the truest parts of ourselves--all at once, everything.
 
 Who I am and what I do are inseparable, yet they seem to become even more inseparable as I trot along. By nature, I'm an artistic type. My research and my analytical processes flow primarily from that creative space, and I see the beauty taking shape not so much in the outcome, but in the approach, the process, the thinking. The foundational philosophical questions--who am I and how shall I live-- harmonize perfectly with the mysteries that beckon from the neural assemblies in the brain, which give rise to the entire experience of being human. As a researcher, my goal is to see clearly, to examine from multiple angles. And indeed, I've never seen it, but if I had to describe what "perfect" research looks like: my diamond. Elegant, perhaps a with bell-like clarity. You see the figure and it stuns you with a humble kind of power and simplicity.
 
