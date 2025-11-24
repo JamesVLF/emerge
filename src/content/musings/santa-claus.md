@@ -5,6 +5,8 @@ pubDate: 2025-11-22T16:54:00.000-08:00
 category: story
 tags:
   - choice
+  - holidays
+  - stupidity
 ---
 I used to have a superstitious belief that some vague abstraction of sorts--not ME-- was responsible for where I happened to be at a particular moment in life. "They created this feeling in me"--anger or self-pity or whatever. And you think that rush of emotion that compels you to act out in a certain way IS you! That, in a sense, you "have no choice." But you do, and you know it, just like I knew it all along! You'll deny it and pretend that you can't see it. You'll look everywhere for exceptions, for some compromise, because the absolute nature of what I'm suggesting--that we ourselves are 100% responsible all of the time for everything in our experience--is absolutely terrifying, isn't it? It can't be true, can it!? It sounds insane, doesn't it? 
 
