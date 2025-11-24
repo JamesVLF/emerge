@@ -1,7 +1,7 @@
 ---
 title: My Story
 description: A brief history of me and my relationship to life.
-pubDate: 2025-11-23T13:33:00.000-08:00
+pubDate: 2025-11-23T16:57:00.000-08:00
 category: story
 ---
 Five years ago, I enrolled full-time
