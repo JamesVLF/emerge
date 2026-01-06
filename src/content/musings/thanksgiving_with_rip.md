@@ -16,10 +16,12 @@ And this motherfucker...he was torturing me because they were out of 64.9 oz pep
 
 How did I end up doing this homeless guy's bidding--being his goddamned butler--in the first place? I made eye contact with him and then i had to do whatever he asked…I hooked his ass up too! He got himself some nice cigars...the long, thin ones with the cherry flavor.
 
-Well after the soda issue was negotiated (we settled on the 64 oz doctor pepper) we moved over to the snack area….I had to help him locate corn chips (he was handing me Cheetos, pretzels, everything…asking me if it was plain corn chips). Then after 15/20 min, I handed the nice cashiers a 20 and said to just give him the change…he was still dragging his ass through the aisles talking to himself…..
+Well after the soda issue was negotiated (it was not on issue of flavor to him, but it was the flavor to volume ratio, you see...and that 0.1 oz difference just made the Pepsi tantamount to a pile of shit, so Dr. Pepper was the obvious and only choice--so he conceded to drinking the 64 oz doctor pepper. He got angry because I didn't thank him for helping me out by agreeing to drink the totally unappetizing number of ounces... which helped me out like you wouldn't believe!) we moved over to the snack area….I had to help him locate corn chips (he was handing me Cheetos, pretzels, everything…asking me if it was plain corn chips). Then after 15/20 min, I handed the nice cashiers a 20 and said to just give him the change…he was still dragging his ass through the aisles talking to himself…..
 
 then he went to the counter and they told him he has 20 bucks to play with and he started demanding the cigars from behind the shelf. He smelled so fucking bad….it hit you like smelling salts or ammonia. He's a human being, though….and it's my favorite thing to be able to do that, so I was grateful that he shuffled up to me.
 
-Just sayin….he smelled like aged gorgonzola…he should probably take a knife and shave some off his feet and eat it on a cracker like I did. It'll probably taste even better than my gorgonzola.
+Just sayin….he smelled like aged gorgonzola…he should probably take a knife and shave some off his feet and eat it on a cracker like I did. It'll probably taste even better than my gorgonzola. I might even go back there with a cheese grater when I need to top off my spaghetti--I'll pay him another 20 bucks to hand over his foot for a few shavings."
 
-Amazing how he grew so demanding….ordering the two cashiers around….when he learned he had 20 bucks in 7/11 store credit to play with."
+Amazing how he grew so demanding…ordering the two cashiers around….when he learned he had 20 bucks in 7/11 store credit to play with....
+
+Anyway, while he was ordering those two suckers around, I siezed the moment and slid out the door....I saw him coming out the door and i immediately hit the gas!"
