@@ -34,7 +34,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "musings"
-    label: "Musings"
+    label: "Office Hrs w/ Ripmaster"
     folder: "src/content/musings"
     create: true
     slug: "{{slug}}"
