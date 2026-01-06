@@ -14,11 +14,11 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<BaseLayout title={`${post.data.title} | Musings`} description={post.data.description}>
+<BaseLayout title={`${post.data.title} | Office Hrs w/ Ripmaster`} description={post.data.description}>
   <article class="max-w-3xl mx-auto">
     <!-- Back link -->
     <a href="/musings" class="inline-flex items-center gap-2 text-neural-600 hover:text-synapse-dark transition-colors font-body mb-8">
-      <span>←</span> Back to musings
+      <span>←</span> Back to Office Hrs
     </a>
 
     <!-- Header -->
