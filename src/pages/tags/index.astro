@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const research = await getCollection('research', ({ data }) =>
+  import.meta.env.PROD ? !data.draft : true
+);
+const musings = await getCollection('musings', ({ data }) =>
+  import.meta.env.PROD ? !data.draft : true
+);
+
+const counts = new Map();
+for (const post of [...research, ...musings]) {
+  for (const tag of post.data.tags ?? []) {
+    counts.set(tag, (counts.get(tag) ?? 0) + 1);
+  }
+}
+
+const tags = Array.from(counts.entries()).sort((a, b) =>
+  b[1] - a[1] || a[0].localeCompare(b[0])
+);
+---
+
+<BaseLayout title="Tags | James" description="Browse posts by tag">
+  <div class="max-w-4xl mx-auto">
+    <div class="mb-16">
+      <h1 class="text-5xl md:text-6xl font-display font-semibold mb-6 bg-gradient-to-r from-neural-900 to-synapse-dark bg-clip-text text-transparent">
+        Tags
+      </h1>
+      <p class="text-xl text-neural-600 font-body leading-relaxed">
+        Browse all posts grouped by tag.
+      </p>
+    </div>
+
+    {tags.length === 0 ? (
+      <p class="text-neural-600 font-body">No tags yet.</p>
+    ) : (
+      <div class="flex flex-wrap gap-3">
+        {tags.map(([tag, count]) => (
+          <a
+            href={`/tags/${tag}`}
+            class="inline-flex items-center gap-2 px-4 py-2 bg-white/60 border border-neural-200 rounded-full text-sm font-body text-neural-700 hover:border-synapse hover:text-synapse-dark transition-colors"
+          >
+            <span class="font-mono">#{tag}</span>
+            <span class="text-xs text-neural-500">{count}</span>
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+</BaseLayout>
