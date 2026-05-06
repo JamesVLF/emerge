@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const research = await getCollection('research', ({ data }) =>
+    import.meta.env.PROD ? !data.draft : true
+  );
+  const musings = await getCollection('musings', ({ data }) =>
+    import.meta.env.PROD ? !data.draft : true
+  );
+
+  const tagged: any[] = [
+    ...research.map((p) => ({ ...p, _kind: 'research' })),
+    ...musings.map((p) => ({ ...p, _kind: 'musings' })),
+  ];
+
+  const tagMap = new Map<string, any[]>();
+  for (const post of tagged) {
+    for (const tag of post.data.tags ?? []) {
+      if (!tagMap.has(tag)) tagMap.set(tag, []);
+      tagMap.get(tag)!.push(post);
+    }
+  }
+
+  return Array.from(tagMap.entries()).map(([tag, posts]) => ({
+    params: { tag },
+    props: {
+      tag,
+      posts: posts.sort(
+        (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+      ),
+    },
+  }));
+}
+
+const { tag, posts } = Astro.props;
+---
+
+<BaseLayout title={`#${tag} | James`} description={`Posts tagged ${tag}`}>
+  <div class="max-w-4xl mx-auto">
+    <a href="/tags" class="inline-flex items-center gap-2 text-neural-600 hover:text-synapse transition-colors font-body mb-8">
+      <span>←</span> All tags
+    </a>
+
+    <div class="mb-16">
+      <p class="text-sm font-mono text-neural-500 mb-2">Tag</p>
+      <h1 class="text-5xl md:text-6xl font-display font-semibold mb-6 bg-gradient-to-r from-neural-900 to-synapse-dark bg-clip-text text-transparent">
+        #{tag}
+      </h1>
+      <p class="text-xl text-neural-600 font-body">
+        {posts.length} post{posts.length === 1 ? '' : 's'}
+      </p>
+    </div>
+
+    <div class="space-y-8">
+      {posts.map((post) => (
+        <article class="group">
+          <a href={`/${post._kind}/${post.slug}`} class="block">
+            <div class="bg-white/60 backdrop-blur-sm rounded-lg p-6 border border-neural-200 hover:border-synapse-light transition-all duration-300 hover:shadow-lg">
+              <div class="flex items-center gap-4 mb-2">
+                <time class="text-sm font-mono text-neural-500">
+                  {post.data.pubDate.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  })}
+                </time>
+                <span class="text-xs font-mono px-2 py-0.5 bg-neural-100 text-neural-600 rounded-full">
+                  {post._kind}
+                </span>
+              </div>
+
+              <h2 class="text-xl md:text-2xl font-display font-semibold mb-2 text-neural-800 group-hover:text-synapse transition-colors">
+                {post.data.title}
+              </h2>
+
+              {post.data.description && (
+                <p class="text-neural-600 font-body leading-relaxed">
+                  {post.data.description}
+                </p>
+              )}
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

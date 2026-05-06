@@ -14,6 +14,7 @@ const { title, description = "Exploring the intersection of computational biolog
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="James LaFemina" href="/rss.xml" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     
@@ -80,6 +81,7 @@ const { title, description = "Exploring the intersection of computational biolog
         <div class="flex gap-6">
           <a href="mailto:james.lafemina@gmail.com" class="hover:text-synapse transition-colors">Email</a>
           <a href="https://github.com/JamesVLF" class="hover:text-dendrite transition-colors">GitHub</a>
+          <a href="/rss.xml" class="hover:text-synapse-dark transition-colors">RSS</a>
         </div>
       </div>
     </footer>
