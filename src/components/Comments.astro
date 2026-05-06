@@ -1,0 +1,38 @@
+---
+// Giscus comments. Configure these values after running https://giscus.app
+// for your repo and pasting in the generated values.
+//
+// Setup checklist (one-time, on github.com):
+//   1. Make the repo PUBLIC (Giscus only works on public repos).
+//   2. Settings -> General -> Features -> enable "Discussions".
+//   3. Install the Giscus app: https://github.com/apps/giscus
+//   4. Visit https://giscus.app and fill in your repo
+//      (JamesVLF/emerge), then copy the data-* values into the consts below.
+//
+// Replace the four "REPLACE_ME" values from giscus.app's generated <script>.
+const giscusRepo = 'JamesVLF/emerge';
+const giscusRepoId = 'R_kgDOQayyXw';
+const giscusCategory = 'General';
+const giscusCategoryId = 'DIC_kwDOQayyX84C8ddq';
+---
+
+<section class="mt-16 pt-12 border-t border-neural-200">
+  <h3 class="text-xl font-display font-semibold mb-6 text-neural-800">Comments</h3>
+  <script
+    src="https://giscus.app/client.js"
+    data-repo={giscusRepo}
+    data-repo-id={giscusRepoId}
+    data-category={giscusCategory}
+    data-category-id={giscusCategoryId}
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+    is:inline></script>
+</section>
