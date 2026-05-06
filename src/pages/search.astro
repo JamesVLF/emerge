@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Search | James" description="Search across research, musings, and feed">
+  <div class="max-w-3xl mx-auto">
+    <div class="mb-12">
+      <h1 class="text-5xl md:text-6xl font-display font-semibold mb-6 bg-gradient-to-r from-neural-900 to-synapse-dark bg-clip-text text-transparent">
+        Search
+      </h1>
+      <p class="text-xl text-neural-600 font-body leading-relaxed">
+        Search across research notes, musings, and feed posts.
+      </p>
+    </div>
+
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+    <div id="search" class="pagefind-ui-wrapper"></div>
+    <script src="/pagefind/pagefind-ui.js" is:inline></script>
+    <script is:inline>
+      window.addEventListener('DOMContentLoaded', () => {
+        new PagefindUI({
+          element: '#search',
+          showSubResults: true,
+          showImages: false,
+        });
+      });
+    </script>
+
+    <noscript>
+      <p class="text-neural-600 font-body mt-6">
+        Search requires JavaScript. Or browse:
+        <a href="/research" class="text-synapse hover:text-synapse-dark underline">Research</a>,
+        <a href="/musings" class="text-synapse-dark hover:text-synapse underline">Musings</a>,
+        <a href="/feed" class="text-dendrite hover:text-dendrite-dark underline">Feed</a>.
+      </p>
+    </noscript>
+  </div>
+
+  <style is:global>
+    .pagefind-ui {
+      --pagefind-ui-primary: #6366f1;
+      --pagefind-ui-text: #1f2937;
+      --pagefind-ui-background: #ffffff;
+      --pagefind-ui-border: #e5e7eb;
+      --pagefind-ui-tag: #f3f4f6;
+      --pagefind-ui-border-width: 1px;
+      --pagefind-ui-border-radius: 0.5rem;
+      --pagefind-ui-font: 'Source Sans 3', system-ui, sans-serif;
+    }
+  </style>
+</BaseLayout>
