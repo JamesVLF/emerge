@@ -2,7 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const feedPosts = (await getCollection('feed')).sort(
+const feedPosts = (await getCollection('feed', ({ data }) =>
+  import.meta.env.PROD ? !data.draft : true
+)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---

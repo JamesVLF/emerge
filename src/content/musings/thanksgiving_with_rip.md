@@ -1,6 +1,7 @@
 ---
 title: Thanksgiving
 description: "He reveals a part of himself that is warm and tender"
+draft: true
 pubDate: 2026-01-06
 category: "story"
 tags: ["ripmaster", "rotten"]
@@ -8,11 +9,11 @@ tags: ["ripmaster", "rotten"]
 
 "Cheese is weird because it reaks like homeless person--and the more it smells like homeless crotch, the more delicious it is!
 
-This realization happened when I opened up the gorgonzola on Thanksgiving....and...I thought it was because the homeless guy's odor molecules--shit particles, gooch oils, noxious fumes and gasses, the mounds of tarter over his rotten teeth and gums, all of it totally inevitable due to the Second Law of Thermodynamics--but the binding energy of that FILTH to the olfactory receptors was....it was incomprehsibly shocking in its capacity to disgust me!
+This realization happened on Thanksgiving when I was preparing the hors d'oeuvres. I thought it was the homeless guy from earlier I was smelling--his shit molecules, gooch oils, noxious gases eminating from the tarter of his tooth enamel. IUPAC refuses to even acknowledge such compounds, gentleman--they are not even catagorized, which makes them more disgusting. Nevertheless, the binding energy of these crotch molecules to my smell receptors was uncanny. Verily, the Second Law of Thermodynamics can be utterly shocking in its capacity to disgust! Let me stay on point here--the issue of immediate import is the aroma.  
 
-I felt truly the victim of extreme violence--the uncategorized compounds viciously pounding and pounding on my nostrils. I was about to puke right on the Thanksgiving table...but then i realized...it's not the homeless guy I'm smelling--it's the cheese!! Instantly, the vomit reflex transformed into a thousand lawn sprinklers in my mouth (I'm referring to my salivary glands here, metaphorically, you know). And I was so shocked by this paradox that the cracker and cheese detached from my tongue and fell right out of my mouth.
+Please believe me when I say: it was bordering on violence--the sting of these unclassified compounds was like ammonium carbonate in alcohol (smelling salts). The vomit reflex was getting triggered, but then I looked down at what I was arranging--gorgonzola! That made me realize that I wasn't smelling crotch compounds from earlier--I was smelling expensive cheese! How perplexing this was--this cheese smelled exactly like shit, yet my salivary glands, gastric juices, etc were all fully on board as I popped the cheese and cracker into my mouth. There I was at the table, engrossed in this conundrum. I had a flashback to an English country girl I dated in my 20s. She used to put a wedge of moldy cheese in her window sill, so that after several days of the sun shining on it, it would "ripen." I could no longer kiss her after hearing that, so I was forced to end our relationship. Now look at me! My brain was processing all of this information at once, gentleman.  
 
-And this motherfucker...he was torturing me because they were out of 64.9 oz pepsi bottles…the store only carried the Pepsi in 64.8 oz bottles--and this was totally unacceptable to him!
+And the source of this epiphany was a horrible bastard! was torturing me because they were out of 64.9 oz pepsi bottles…the store only carried the Pepsi in 64.8 oz bottles--and this was totally unacceptable to him!
 
 How did I end up doing this homeless guy's bidding--being his goddamned butler--in the first place? I made eye contact with him and--i tried not to, but it was like a nervous twitch came over me and my neck turned on its own....before it even finished the turn i knew i was fucked! i was now going to have to do  whatever the fuck he asked…be his servent for however long it took while my friend waited for me in the car. fuck it, there was nothing i could do now! so i just tried to hooked his ass up as efficiently as possible so I could move on! this is why i try not to cross paths with people too often--i'll never get anything done and i'll be totally broke. i'll be the one shuffling with my ass hanging out. He got himself some nice cigars too...the long, thin ones with the cherry flavor. he was going to puff away on those like a friggin boss later on that night!
 
