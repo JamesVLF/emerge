@@ -46,6 +46,24 @@ const ogImage = new URL(image, Astro.site).toString();
     <!-- View Transitions -->
     <ViewTransitions />
 
+    {import.meta.env.PROD && (
+      <>
+        <script
+          is:inline
+          data-goatcounter="https://jamesvlf.goatcounter.com/count"
+          async
+          src="https://gc.zgo.at/count.js"
+        ></script>
+        <script is:inline>
+          document.addEventListener('astro:after-swap', () => {
+            if (window.goatcounter && typeof window.goatcounter.count === 'function') {
+              window.goatcounter.count({ path: location.pathname + location.search });
+            }
+          });
+        </script>
+      </>
+    )}
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
