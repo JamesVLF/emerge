@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { slugifyTag } from '../../utils/tags';
 
 const research = await getCollection('research', ({ data }) =>
   import.meta.env.PROD ? !data.draft : true
@@ -9,15 +10,21 @@ const musings = await getCollection('musings', ({ data }) =>
   import.meta.env.PROD ? !data.draft : true
 );
 
-const counts = new Map();
+const counts = new Map<string, { display: string; count: number }>();
 for (const post of [...research, ...musings]) {
   for (const tag of post.data.tags ?? []) {
-    counts.set(tag, (counts.get(tag) ?? 0) + 1);
+    const slug = slugifyTag(tag);
+    const existing = counts.get(slug);
+    if (existing) {
+      existing.count += 1;
+    } else {
+      counts.set(slug, { display: tag, count: 1 });
+    }
   }
 }
 
-const tags = Array.from(counts.entries()).sort((a, b) =>
-  b[1] - a[1] || a[0].localeCompare(b[0])
+const tags = Array.from(counts.entries()).sort(([slugA, a], [slugB, b]) =>
+  b.count - a.count || a.display.localeCompare(b.display)
 );
 ---
 
@@ -36,12 +43,12 @@ const tags = Array.from(counts.entries()).sort((a, b) =>
       <p class="text-neural-600 font-body">No tags yet.</p>
     ) : (
       <div class="flex flex-wrap gap-3">
-        {tags.map(([tag, count]) => (
+        {tags.map(([slug, { display, count }]) => (
           <a
-            href={`/tags/${tag}`}
+            href={`/tags/${slug}`}
             class="inline-flex items-center gap-2 px-4 py-2 bg-white/60 border border-neural-200 rounded-full text-sm font-body text-neural-700 hover:border-synapse hover:text-synapse-dark transition-colors"
           >
-            <span class="font-mono">#{tag}</span>
+            <span class="font-mono">#{display}</span>
             <span class="text-xs text-neural-500">{count}</span>
           </a>
         ))}

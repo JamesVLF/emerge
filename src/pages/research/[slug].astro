@@ -2,6 +2,8 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ShareButtons from '../../components/ShareButtons.astro';
+import Comments from '../../components/Comments.astro';
+import { slugifyTag } from '../../utils/tags';
 
 export async function getStaticPaths() {
   const posts = await getCollection('research', ({ data }) =>
@@ -48,7 +50,7 @@ const { Content } = await post.render();
         <div class="flex flex-wrap gap-2 mt-6">
           {post.data.tags.map((tag) => (
             <a
-              href={`/tags/${tag}`}
+              href={`/tags/${slugifyTag(tag)}`}
               class="text-xs font-mono px-3 py-1 bg-neural-100 text-neural-600 hover:bg-synapse-light/30 hover:text-synapse-dark rounded-full transition-colors"
             >
               {tag}
@@ -64,6 +66,7 @@ const { Content } = await post.render();
     </div>
 
     <ShareButtons title={post.data.title} url={Astro.url.href} />
+    <Comments />
   </article>
 </BaseLayout>
 
