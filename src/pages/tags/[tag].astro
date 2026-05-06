@@ -10,10 +10,14 @@ export async function getStaticPaths() {
   const musings = await getCollection('musings', ({ data }) =>
     import.meta.env.PROD ? !data.draft : true
   );
+  const protocols = await getCollection('protocols', ({ data }) =>
+    import.meta.env.PROD ? !data.draft : true
+  );
 
   const tagged: any[] = [
     ...research.map((p) => ({ ...p, _kind: 'research' })),
     ...musings.map((p) => ({ ...p, _kind: 'musings' })),
+    ...protocols.map((p) => ({ ...p, _kind: 'protocols' })),
   ];
 
   const tagMap = new Map<string, { display: string; posts: any[] }>();

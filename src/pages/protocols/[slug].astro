@@ -1,0 +1,147 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+import Comments from '../../components/Comments.astro';
+import { slugifyTag } from '../../utils/tags';
+
+export async function getStaticPaths() {
+  const protocols = await getCollection('protocols', ({ data }) =>
+    import.meta.env.PROD ? !data.draft : true
+  );
+  return protocols.map(protocol => ({
+    params: { slug: protocol.slug },
+    props: { protocol },
+  }));
+}
+
+const { protocol } = Astro.props;
+const { Content } = await protocol.render();
+---
+
+<BaseLayout title={`${protocol.data.title} | Protocols`} description={protocol.data.description}>
+  <article class="max-w-3xl mx-auto">
+    <a href="/protocols" class="inline-flex items-center gap-2 text-neural-600 hover:text-dendrite-dark transition-colors font-body mb-8">
+      <span>←</span> Back to protocols
+    </a>
+
+    <header class="mb-12">
+      <div class="flex items-center gap-4 mb-4 flex-wrap">
+        <time class="text-sm font-mono text-neural-500">
+          {protocol.data.pubDate.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })}
+        </time>
+        {protocol.data.version && (
+          <span class="text-xs font-mono px-3 py-1 bg-dendrite-light/20 text-dendrite-dark rounded-full">
+            {protocol.data.version}
+          </span>
+        )}
+        {protocol.data.updated && protocol.data.updated.valueOf() !== protocol.data.pubDate.valueOf() && (
+          <span class="text-xs font-mono text-neural-500">
+            Updated {protocol.data.updated.toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'short',
+              day: 'numeric',
+            })}
+          </span>
+        )}
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-display font-semibold mb-4 leading-tight bg-gradient-to-r from-neural-900 to-dendrite-dark bg-clip-text text-transparent">
+        {protocol.data.title}
+      </h1>
+
+      {protocol.data.description && (
+        <p class="text-xl text-neural-600 font-body leading-relaxed">
+          {protocol.data.description}
+        </p>
+      )}
+
+      {protocol.data.protocolsIoUrl && (
+        <p class="mt-4 font-body">
+          <a
+            href={protocol.data.protocolsIoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-dendrite-dark hover:text-dendrite underline"
+          >
+            View on protocols.io →
+          </a>
+        </p>
+      )}
+
+      {protocol.data.tags && (
+        <div class="flex flex-wrap gap-2 mt-6">
+          {protocol.data.tags.map((tag) => (
+            <a
+              href={`/tags/${slugifyTag(tag)}`}
+              class="text-xs font-mono px-3 py-1 bg-neural-100 text-neural-600 hover:bg-dendrite-light/30 hover:text-dendrite-dark rounded-full transition-colors"
+            >
+              {tag}
+            </a>
+          ))}
+        </div>
+      )}
+    </header>
+
+    <div class="prose prose-lg max-w-none">
+      <Content />
+    </div>
+
+    <ShareButtons title={protocol.data.title} url={Astro.url.href} />
+    <Comments />
+  </article>
+</BaseLayout>
+
+<style is:global>
+  .prose {
+    @apply text-neural-700 font-body;
+  }
+
+  .prose h2 {
+    @apply text-3xl font-display font-semibold text-neural-800 mt-12 mb-6;
+  }
+
+  .prose h3 {
+    @apply text-2xl font-display font-semibold text-neural-800 mt-8 mb-4;
+  }
+
+  .prose p {
+    @apply mb-6 leading-relaxed;
+  }
+
+  .prose ul, .prose ol {
+    @apply mb-6 ml-6 space-y-2;
+  }
+
+  .prose li {
+    @apply leading-relaxed;
+  }
+
+  .prose a {
+    @apply text-dendrite hover:text-dendrite-dark underline transition-colors;
+  }
+
+  .prose code {
+    @apply font-mono text-sm bg-neural-100 px-2 py-1 rounded text-dendrite-dark;
+  }
+
+  .prose pre {
+    @apply bg-neural-900 text-neural-50 p-4 rounded-lg overflow-x-auto;
+  }
+
+  .prose pre code {
+    @apply bg-transparent text-neutral-50 p-0;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 border-dendrite-light pl-4 italic text-neural-600 my-6;
+  }
+
+  .prose hr {
+    @apply border-neural-200 my-12;
+  }
+</style>
