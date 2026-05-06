@@ -8,6 +8,7 @@ const researchCollection = defineCollection({
     pubDate: z.date(),
     tags: z.array(z.string()).optional(),
     image: z.string().optional(),
+    draft: z.boolean().optional().default(false),
   }),
 });
 
@@ -19,6 +20,7 @@ const feedCollection = defineCollection({
     type: z.enum(['text', 'image', 'video', 'audio', 'link']),
     media: z.string().optional(),
     link: z.string().optional(),
+    draft: z.boolean().optional().default(false),
   }),
 });
 
@@ -30,6 +32,7 @@ const musingsCollection = defineCollection({
     pubDate: z.date(),
     category: z.enum(['writing', 'music', 'observation', 'story']).optional(),
     tags: z.array(z.string()).optional(),
+    draft: z.boolean().optional().default(false),
   }),
 });
 
