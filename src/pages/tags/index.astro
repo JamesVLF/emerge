@@ -9,9 +9,12 @@ const research = await getCollection('research', ({ data }) =>
 const musings = await getCollection('musings', ({ data }) =>
   import.meta.env.PROD ? !data.draft : true
 );
+const protocols = await getCollection('protocols', ({ data }) =>
+  import.meta.env.PROD ? !data.draft : true
+);
 
 const counts = new Map<string, { display: string; count: number }>();
-for (const post of [...research, ...musings]) {
+for (const post of [...research, ...musings, ...protocols]) {
   for (const tag of post.data.tags ?? []) {
     const slug = slugifyTag(tag);
     const existing = counts.get(slug);
