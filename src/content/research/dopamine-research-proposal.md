@@ -1,7 +1,7 @@
 ---
 title: "Dopamine Research Proposal"
 description: "Research proposal exploring dopaminergic dynamics in midbrain organoid models."
-pubDate: 2026-05-06
+pubDate: 2026-02-26
 tags: ["dopamine", "midbrain", "research-proposal", "parkinsons"]
 ---
 

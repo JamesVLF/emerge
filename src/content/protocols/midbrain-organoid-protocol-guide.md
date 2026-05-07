@@ -1,7 +1,7 @@
 ---
 title: "Midbrain Organoid Protocol Guide"
 description: "Step-by-step protocol for generating human midbrain organoids from iPSCs."
-pubDate: 2026-05-06
+pubDate: 2026-02-28
 version: "v1.0"
 tags: ["organoids", "midbrain", "protocol"]
 ---
