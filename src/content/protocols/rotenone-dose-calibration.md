@@ -1,7 +1,7 @@
 ---
 title: "Rotenone Dose Calibration"
 description: "Protocol for calibrating rotenone dose-response in midbrain organoid models."
-pubDate: 2026-05-06
+pubDate: 2026-01-26
 version: "v1.0"
 tags: ["rotenone", "dose-calibration", "organoids", "parkinsons", "protocol"]
 ---

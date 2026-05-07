@@ -1,7 +1,7 @@
 ---
 title: "Thalamic Organoid Protocol Guide"
 description: "Step-by-step protocol for generating human thalamic organoids from iPSCs."
-pubDate: 2026-05-06
+pubDate: 2026-03-08
 version: "v1.0"
 tags: ["organoids", "thalamic", "protocol"]
 ---
