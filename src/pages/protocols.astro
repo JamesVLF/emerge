@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { getPdfPosts } from '../utils/pdfDrops';
 
-const protocols = (await getCollection('protocols', ({ data }) =>
+const protocols: any[] = [...(await getCollection('protocols', ({ data }) =>
   import.meta.env.PROD ? !data.draft : true
-)).sort(
+)), ...(await getPdfPosts('protocols'))].sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
@@ -65,7 +66,7 @@ const protocols = (await getCollection('protocols', ({ data }) =>
 
                 {protocol.data.tags && (
                   <div class="flex flex-wrap gap-2 mt-4">
-                    {protocol.data.tags.map((tag) => (
+                    {protocol.data.tags.map((tag: string) => (
                       <span class="text-xs font-mono px-3 py-1 bg-neural-100 text-neural-600 rounded-full">
                         {tag}
                       </span>

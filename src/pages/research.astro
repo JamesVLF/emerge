@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { getPdfPosts } from '../utils/pdfDrops';
 
-const researchPosts = (await getCollection('research', ({ data }) =>
+const researchPosts: any[] = [...(await getCollection('research', ({ data }) =>
   import.meta.env.PROD ? !data.draft : true
-)).sort(
+)), ...(await getPdfPosts('research'))].sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
@@ -44,7 +45,7 @@ const researchPosts = (await getCollection('research', ({ data }) =>
 
               {post.data.tags && (
                 <div class="flex flex-wrap gap-2 mt-4">
-                  {post.data.tags.map((tag) => (
+                  {post.data.tags.map((tag: string) => (
                     <span class="text-xs font-mono px-3 py-1 bg-neural-100 text-neural-600 rounded-full">
                       {tag}
                     </span>
