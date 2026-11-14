@@ -1,7 +1,7 @@
 ---
 title: "Braingeneers Presentation — October 2025"
 description: "Talk on adaptive burst detection in midbrain organoids."
-pubDate: 2025-10-15
+pubDate: 2025-10-17
 tags: ["presentation", "organoids", "burst-analysis"]
 ---
 

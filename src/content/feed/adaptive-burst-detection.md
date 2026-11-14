@@ -2,6 +2,7 @@
 title: "Adaptive Burst Detection in Neural Organoids"
 description: "Developing threshold methods that adapt to individual organoid characteristics rather than using fixed parameters"
 pubDate: 2025-11-20
+type: text
 tags: ["electrophysiology", "burst-analysis", "organoids", "parkinson's"]
 ---
 
