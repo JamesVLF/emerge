@@ -4,21 +4,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ShareButtons from '../../components/ShareButtons.astro';
 import Comments from '../../components/Comments.astro';
 import { slugifyTag } from '../../utils/tags';
-import { getPdfPosts, isPdfPost } from '../../utils/pdfDrops';
 
 export async function getStaticPaths() {
   const protocols = await getCollection('protocols', ({ data }) =>
     import.meta.env.PROD ? !data.draft : true
   );
-  const all: any[] = [...protocols, ...(await getPdfPosts('protocols'))];
-  return all.map(protocol => ({
+  return protocols.map(protocol => ({
     params: { slug: protocol.slug },
     props: { protocol },
   }));
 }
 
 const { protocol } = Astro.props;
-const Content = isPdfPost(protocol) ? null : (await protocol.render()).Content;
+const { Content } = await protocol.render();
 ---
 
 <BaseLayout title={`${protocol.data.title} | Protocols`} description={protocol.data.description}>
@@ -77,7 +75,7 @@ const Content = isPdfPost(protocol) ? null : (await protocol.render()).Content;
 
       {protocol.data.tags && (
         <div class="flex flex-wrap gap-2 mt-6">
-          {protocol.data.tags.map((tag: string) => (
+          {protocol.data.tags.map((tag) => (
             <a
               href={`/tags/${slugifyTag(tag)}`}
               class="text-xs font-mono px-3 py-1 bg-neural-100 text-neural-600 hover:bg-dendrite-light/30 hover:text-dendrite-dark rounded-full transition-colors"
@@ -90,16 +88,7 @@ const Content = isPdfPost(protocol) ? null : (await protocol.render()).Content;
     </header>
 
     <div class="prose prose-lg max-w-none">
-      {Content ? <Content /> : (
-        <>
-          <iframe
-            src={`${protocol.pdf}#view=FitH`}
-            style="width: 100%; height: 85vh; border: 1px solid #e5e7eb; border-radius: 0.5rem;"
-            title={protocol.data.title}
-          ></iframe>
-          <p><a href={protocol.pdf}>Download the PDF</a></p>
-        </>
-      )}
+      <Content />
     </div>
 
     <ShareButtons title={protocol.data.title} url={Astro.url.href} />
