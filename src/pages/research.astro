@@ -26,6 +26,14 @@ const researchPosts = (await getCollection('research', ({ data }) =>
         <article class="group">
           <a href={`/research/${post.slug}`} class="block">
             <div class="bg-white/60 backdrop-blur-sm rounded-lg p-8 border border-neural-200 hover:border-synapse-light transition-all duration-300 hover:shadow-lg">
+              {post.data.image && (
+                <img
+                  src={post.data.image}
+                  alt={`First page of ${post.data.title}`}
+                  loading="lazy"
+                  class="w-full h-64 object-cover object-top rounded border border-neural-200 bg-white mb-6"
+                />
+              )}
               <time class="text-sm font-mono text-neural-500 mb-2 block">
                 {post.data.pubDate.toLocaleDateString('en-US', {
                   year: 'numeric',
