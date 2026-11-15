@@ -7,7 +7,7 @@ tags: ["organoids", "midbrain", "protocol"]
 ---
 
 <iframe
-  src="/protocols/midbrain-organoid-protocol-guide.pdf#view=FitH"
+  src="/protocols/midbrain-organoid-protocol-guide.pdf#zoom=100"
   style="width: 100%; height: 85vh; border: 1px solid #e5e7eb; border-radius: 0.5rem;"
   title="Midbrain Organoid Protocol Guide"
 ></iframe>

@@ -7,7 +7,7 @@ tags: ["rotenone", "dose-calibration", "organoids", "parkinsons", "protocol"]
 ---
 
 <iframe
-  src="/protocols/rotenone-dose-calibration.pdf#view=FitH"
+  src="/protocols/rotenone-dose-calibration.pdf#zoom=100"
   style="width: 100%; height: 85vh; border: 1px solid #e5e7eb; border-radius: 0.5rem;"
   title="Rotenone Dose Calibration"
 ></iframe>

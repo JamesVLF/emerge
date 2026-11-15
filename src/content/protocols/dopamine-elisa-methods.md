@@ -7,7 +7,7 @@ tags: ["dopamine", "elisa", "organoids", "parkinsons", "protocol"]
 ---
 
 <iframe
-  src="/protocols/dopamine-elisa-methods.pdf#view=FitH"
+  src="/protocols/dopamine-elisa-methods.pdf#zoom=100"
   style="width: 100%; height: 85vh; border: 1px solid #e5e7eb; border-radius: 0.5rem;"
   title="Dopamine ELISA Methods"
 ></iframe>

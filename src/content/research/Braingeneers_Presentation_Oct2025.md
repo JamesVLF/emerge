@@ -6,7 +6,7 @@ tags: ["presentation", "organoids", "burst-analysis"]
 ---
 
 <iframe
-  src="/research/Braingeneers_Presentation_Oct_17_2025.pdf#view=FitH"
+  src="/research/Braingeneers_Presentation_Oct_17_2025.pdf#zoom=100"
   style="width: 100%; height: 85vh; border: 1px solid #e5e7eb; border-radius: 0.5rem;"
   title="Braingeneers Presentation October 2025"
 ></iframe>

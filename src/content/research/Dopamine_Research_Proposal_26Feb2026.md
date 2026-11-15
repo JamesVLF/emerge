@@ -6,7 +6,7 @@ tags: ["dopamine", "midbrain", "research-proposal", "parkinsons"]
 ---
 
 <iframe
-  src="/research/Dopamine_Research_Proposal_26Feb2026.pdf#view=FitH"
+  src="/research/Dopamine_Research_Proposal_26Feb2026.pdf#zoom=100"
   style="width: 100%; height: 85vh; border: 1px solid #e5e7eb; border-radius: 0.5rem;"
   title="Dopamine Research Proposal"
 ></iframe>

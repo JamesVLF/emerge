@@ -7,7 +7,7 @@ tags: ["organoids", "thalamic", "protocol"]
 ---
 
 <iframe
-  src="/protocols/thalamic-organoid-protocol-guide.pdf#view=FitH"
+  src="/protocols/thalamic-organoid-protocol-guide.pdf#zoom=100"
   style="width: 100%; height: 85vh; border: 1px solid #e5e7eb; border-radius: 0.5rem;"
   title="Thalamic Organoid Protocol Guide"
 ></iframe>

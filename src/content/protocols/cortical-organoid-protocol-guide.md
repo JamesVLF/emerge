@@ -7,7 +7,7 @@ tags: ["organoids", "cortical", "protocol"]
 ---
 
 <iframe
-  src="/protocols/cortical-organoid-protocol-guide.pdf#view=FitH"
+  src="/protocols/cortical-organoid-protocol-guide.pdf#zoom=100"
   style="width: 100%; height: 85vh; border: 1px solid #e5e7eb; border-radius: 0.5rem;"
   title="Cortical Organoid Protocol Guide"
 ></iframe>
