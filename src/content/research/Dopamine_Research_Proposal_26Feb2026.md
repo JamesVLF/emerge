@@ -11,6 +11,6 @@ tags: ["dopamine", "midbrain", "research-proposal", "parkinsons"]
   title="Dopamine Research Proposal"
 ></iframe>
 
-[Download the PDF](/research/dopamine-research-proposal.pdf)
+[Download the PDF](/research/Dopamine_Research_Proposal_26Feb2026.pdf)
 
 Cite as: James LaFemina, *Dopamine Research Proposal*, DOI: [10.5281/zenodo.20060981](https://doi.org/10.5281/zenodo.20060981). Licensed under CC BY 4.0.
